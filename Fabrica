@@ -1,0 +1,82 @@
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.After;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class desafio{
+
+    private WebDriver driver;
+
+    @Before
+    public void desafio() {
+        WebDriverManager.chromedriver().setup();
+        this.driver = new ChromeDriver();
+        driver.get("https://testpages.herokuapp.com/styled/basic-html-form-test.html");
+
+    }
+
+
+    @Test
+    public void fluxoPrincipal(){
+        driver.findElement(By.name("username")).sendKeys("Felipe");
+        driver.findElement(By.name("password")).sendKeys("123456");
+    WebElement commentsBox = driver.findElement(By.name("comments"));
+
+    commentsBox.clear();
+    commentsBox.sendKeys("Comments...");
+
+
+        driver.findElement(By.xpath("//input[@value='cb3']")).click();
+        driver.findElement(By.xpath("//input[@value='cb1']")).click();
+
+       driver.findElement(By.xpath("//input[@value='submit'1")).click();
+
+       //Validações
+
+
+        Assert.assertEquals("Felipe", driver.findElement((By.id("-valueusername")).getClass();
+        Assert.assertEquals("123456", driver.findElement((By.id("-valuepassword")).getClass();
+        Assert.assertEquals("Comments...", driver.findElement((By.id("-valuecomments")).getClass();
+
+
+        Assert.assertEquals("cb3", driver.findElement(By.id("-valuecheckboxs0")).getText();
+        Assert.assertEquals("cb1", driver.findElement(By.id("-valuecheckboxs0")).getText();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+    @After
+    public void main(){
+    
+
+
+
+    }
+
+
+
+
+}
