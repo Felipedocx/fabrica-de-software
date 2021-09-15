@@ -39,9 +39,9 @@ public class desafio{
        //Validações
 
 
-        Assert.assertEquals("Felipe", driver.findElement((By.id("-valueusername")).getClass();
-        Assert.assertEquals("123456", driver.findElement((By.id("-valuepassword")).getClass();
-        Assert.assertEquals("Comments...", driver.findElement((By.id("-valuecomments")).getClass();
+        Assert.assertEquals("Felipe", driver.findElement((By.id("-valueusername")).getText();
+        Assert.assertEquals("123456", driver.findElement((By.id("-valuepassword")).getText();
+        Assert.assertEquals("Comments...", driver.findElement((By.id("-valuecomments")).getText();
 
 
         Assert.assertEquals("cb3", driver.findElement(By.id("-valuecheckboxs0")).getText();
