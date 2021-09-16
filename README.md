@@ -1,3 +1,6 @@
+DESAFIOQA_TestSeleniumJUnit Desafio proposto pelo programa de Extensão da Fábrica de Software. Projeto de automação web e Selenium e JUnit. Verificação de valores nos campos pedidos com atualizações de Asserts, em um site de teste ("https://testpages.herokuapp.com/styled/basic-html-form-test.html") Utilizamos o WebDriver.
+
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
 import org.junit.Assert;
