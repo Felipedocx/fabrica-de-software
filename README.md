@@ -69,7 +69,8 @@ public class desafio{
 
 
     @After
-    public void main(){
+    public void fim(){
+    driver.quit()
 
 
 
